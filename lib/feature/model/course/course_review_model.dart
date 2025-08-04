@@ -2,14 +2,14 @@ import '../auth/user_model.dart';
 import 'course_model.dart';
 
 class CourseRemarkModel {
-  final String id; // Added missing id field
+  final String id;
   final CourseModel course;
   final UserModel user;
   final int rating;
   final String comment;
   final DateTime createdAt;
   final DateTime updatedAt;
-  final int version; // Added missing version field (__v)
+  final int version; 
 
   CourseRemarkModel({
     required this.id,

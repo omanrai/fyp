@@ -275,17 +275,17 @@ class CourseReviewController extends GetxController {
 
         return true;
       } else {
-        _errorMessage.value = response.message;
+        // _errorMessage.value = response.message;
         log('Failed to create review: ${response.message}');
 
-        Get.snackbar(
-          'Error',
-          response.message,
-          snackPosition: SnackPosition.BOTTOM,
-          backgroundColor: Colors.red,
-          colorText: Colors.white,
-          duration: const Duration(seconds: 3),
-        );
+        // Get.snackbar(
+        //   'Error',
+        //   response.message,
+        //   snackPosition: SnackPosition.BOTTOM,
+        //   backgroundColor: Colors.red,
+        //   colorText: Colors.white,
+        //   duration: const Duration(seconds: 3),
+        // );
 
         return false;
       }
@@ -293,14 +293,14 @@ class CourseReviewController extends GetxController {
       _errorMessage.value = 'An unexpected error occurred: $e';
       log('Error in createReview: $e');
 
-      Get.snackbar(
-        'Error',
-        'An unexpected error occurred',
-        snackPosition: SnackPosition.BOTTOM,
-        backgroundColor: Colors.red,
-        colorText: Colors.white,
-        duration: const Duration(seconds: 3),
-      );
+      // Get.snackbar(
+      //   'Error',
+      //   'An unexpected error occurred',
+      //   snackPosition: SnackPosition.BOTTOM,
+      //   backgroundColor: Colors.red,
+      //   colorText: Colors.white,
+      //   duration: const Duration(seconds: 3),
+      // );
 
       return false;
     } finally {
