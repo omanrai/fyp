@@ -1,4 +1,3 @@
-import 'package:flutter_fyp/core/utility/clear_focus.dart';
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -65,7 +64,7 @@ class ChatAIController extends GetxController {
       isInitializing.value = true;
       await _loadApiKeys();
     } catch (e) {
-      print('Error during initialization: $e');
+      // Error during initialization: $e
       _handleStorageError(e);
     } finally {
       isInitializing.value = false;
@@ -101,13 +100,13 @@ class ChatAIController extends GetxController {
         _addWelcomeMessage();
       }
     } catch (e) {
-      print('Error loading API keys: $e');
+      // Error loading API keys: $e
       _handleStorageError(e);
     }
   }
 
   void _handleStorageError(dynamic error) {
-    print('Storage error: $error');
+    // Storage error: $error
 
     // Show fallback dialog for manual key entry
     _showSnackbar(
@@ -150,10 +149,8 @@ class ChatAIController extends GetxController {
     if (_geminiKey != null) geminiController.text = _geminiKey!;
 
     Get.dialog(
-      WillPopScope(
-        onWillPop: () async {
-          return hasAnyApiKey.value; // Only allow back if keys exist
-        },
+      PopScope(
+        canPop: hasAnyApiKey.value,
         child: AlertDialog(
           title: Text('Setup API Keys'),
           content: SingleChildScrollView(
@@ -254,7 +251,7 @@ class ChatAIController extends GetxController {
                         gemini.isEmpty ? null : gemini,
                       );
                     } catch (e) {
-                      print('Error saving keys: $e');
+                      // Error saving keys: $e
                     } finally {
                       // Close loading dialog
                       if (Get.isDialogOpen ?? false) {
@@ -344,7 +341,7 @@ class ChatAIController extends GetxController {
         );
       });
     } catch (e) {
-      print('Error storing API keys: $e');
+      // Error storing API keys: $e
       // Show error message after a delay
       Future.delayed(Duration(milliseconds: 300), () {
         _showSnackbar(

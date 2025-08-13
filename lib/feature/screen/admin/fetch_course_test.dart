@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import '../../controller/auth/login_controller.dart';
 import '../../controller/course/course_controller.dart';
 import '../../model/course/course_model.dart';
-import '../courses/course test/course_test_screen.dart';
 import 'view_course_test.dart';
 
 class AdminCourseScreen extends StatefulWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_fyp/core/utility/dialog_utils.dart';
 import 'package:get/get.dart';
 
 import '../../controller/course/course_test_controller.dart';

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../core/constant/api_url.dart';
 import '../../controller/course/course_controller.dart';
 import '../../controller/course/enrollment_controller.dart';
 import '../../model/course/course_model.dart';

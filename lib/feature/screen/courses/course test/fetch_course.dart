@@ -8,7 +8,6 @@ import '../../../controller/auth/login_controller.dart';
 import '../../../controller/course/course_controller.dart';
 import '../../../controller/course/enrollment_controller.dart';
 import '../../../model/course/course_model.dart';
-import '../../../model/course/course_test_model.dart';
 import 'course_test_quiz.dart';
 import 'course_test_screen.dart';
 

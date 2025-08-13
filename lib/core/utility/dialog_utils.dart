@@ -25,7 +25,7 @@ class DialogUtils {
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: (isDangerous ? Colors.red : Get.theme.primaryColor)
-                      .withOpacity(0.1),
+                      .withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(
@@ -94,8 +94,8 @@ class DialogUtils {
     bool canDismiss = false,
   }) {
     Get.dialog(
-      WillPopScope(
-        onWillPop: () async => canDismiss,
+      PopScope(
+        canPop: canDismiss,
         child: Center(
           child: Container(
             padding: const EdgeInsets.all(24),
@@ -105,7 +105,7 @@ class DialogUtils {
               borderRadius: BorderRadius.circular(16),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.1),
+                  color: Colors.black.withValues(alpha: 0.1),
                   blurRadius: 10,
                   offset: const Offset(0, 4),
                 ),
@@ -148,8 +148,8 @@ class DialogUtils {
     return showDialog(
       context: context,
       barrierDismissible: barrierDismissible,
-      builder: (context) => WillPopScope(
-        onWillPop: () async => barrierDismissible,
+      builder: (context) => PopScope(
+        canPop: barrierDismissible,
         child: Dialog(
           backgroundColor: Colors.transparent,
           insetPadding: const EdgeInsets.symmetric(horizontal: 32),
@@ -161,7 +161,7 @@ class DialogUtils {
                 borderRadius: BorderRadius.circular(16),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color: Colors.black.withValues(alpha: 0.1),
                     blurRadius: 10,
                     offset: const Offset(0, 4),
                   ),
@@ -219,7 +219,7 @@ class DialogUtils {
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.green.withOpacity(0.1),
+                color: Colors.green.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Icon(
@@ -284,7 +284,7 @@ class DialogUtils {
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Colors.red.withOpacity(0.1),
+                color: Colors.red.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: const Icon(Icons.error, color: Colors.red, size: 20),
@@ -345,7 +345,7 @@ class DialogUtils {
             Container(
               padding: const EdgeInsets.all(8),
               decoration: BoxDecoration(
-                color: Get.theme.primaryColor.withOpacity(0.1),
+                color: Get.theme.primaryColor.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(8),
               ),
               child: Icon(Icons.info, color: Get.theme.primaryColor, size: 20),
