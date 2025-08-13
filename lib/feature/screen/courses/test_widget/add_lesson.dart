@@ -99,7 +99,7 @@
 //         borderRadius: BorderRadius.circular(16),
 //         boxShadow: [
 //           BoxShadow(
-//             color: Colors.black.withOpacity(0.05),
+//             color: Colors.black.withValues(alpha: 0.05),
 //             blurRadius: 10,
 //             offset: const Offset(0, 4),
 //           ),
@@ -111,7 +111,7 @@
 //             width: 50,
 //             height: 50,
 //             decoration: BoxDecoration(
-//               color: const Color(0xFF6366F1).withOpacity(0.1),
+//               color: const Color(0xFF6366F1).withValues(alpha: 0.1),
 //               borderRadius: BorderRadius.circular(12),
 //             ),
 //             child: const Icon(Icons.book, color: Color(0xFF6366F1), size: 24),
@@ -153,7 +153,7 @@
 //         borderRadius: BorderRadius.circular(16),
 //         boxShadow: [
 //           BoxShadow(
-//             color: Colors.black.withOpacity(0.05),
+//             color: Colors.black.withValues(alpha: 0.05),
 //             blurRadius: 10,
 //             offset: const Offset(0, 4),
 //           ),
@@ -461,7 +461,7 @@
 //         return Container(
 //           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
 //           decoration: BoxDecoration(
-//             color: const Color(0xFF6366F1).withOpacity(0.1),
+//             color: const Color(0xFF6366F1).withValues(alpha: 0.1),
 //             borderRadius: BorderRadius.circular(20),
 //           ),
 //           child: Row(
@@ -605,7 +605,7 @@
 //     return Container(
 //       padding: const EdgeInsets.all(12),
 //       decoration: BoxDecoration(
-//         color: const Color(0xFFEF4444).withOpacity(0.1),
+//         color: const Color(0xFFEF4444).withValues(alpha: 0.1),
 //         borderRadius: BorderRadius.circular(8),
 //       ),
 //       child: Row(
@@ -646,7 +646,7 @@
 //           backgroundColor: const Color(0xFF6366F1),
 //           foregroundColor: Colors.white,
 //           elevation: 3,
-//           shadowColor: const Color(0xFF6366F1).withOpacity(0.4),
+//           shadowColor: const Color(0xFF6366F1).withValues(alpha: 0.4),
 //           shape: RoundedRectangleBorder(
 //             borderRadius: BorderRadius.circular(16),
 //           ),

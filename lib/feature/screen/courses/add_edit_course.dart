@@ -496,7 +496,7 @@ class _AddEditCourseScreenState extends State<AddEditCourseScreen> {
                   color: Colors.white,
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.grey.withOpacity(0.1),
+                      color: Colors.grey.withValues(alpha: 0.1),
                       blurRadius: 4,
                       offset: const Offset(0, -2),
                     ),
@@ -514,7 +514,7 @@ class _AddEditCourseScreenState extends State<AddEditCourseScreen> {
                         backgroundColor: primaryColor,
                         foregroundColor: Colors.white,
                         elevation: 3,
-                        shadowColor: const Color(0xFF6366F1).withOpacity(0.4),
+                        shadowColor: const Color(0xFF6366F1).withValues(alpha: 0.4),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(12),
                         ),

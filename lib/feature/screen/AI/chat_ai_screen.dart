@@ -232,7 +232,7 @@
 //                   ),
 //                   boxShadow: [
 //                     BoxShadow(
-//                       color: Colors.black.withOpacity(0.05),
+//                       color: Colors.black.withValues(alpha: 0.05),
 //                       blurRadius: 5,
 //                       offset: Offset(0, 2),
 //                     ),
@@ -254,7 +254,7 @@
 //                       DateFormat('HH:mm').format(message.timestamp),
 //                       style: TextStyle(
 //                         color: message.isUser
-//                             ? Colors.white.withOpacity(0.8)
+//                             ? Colors.white.withValues(alpha: 0.8)
 //                             : Colors.grey[500],
 //                         fontSize: 11,
 //                       ),
@@ -283,9 +283,9 @@
 //       width: 32,
 //       height: 32,
 //       decoration: BoxDecoration(
-//         color: color.withOpacity(0.1),
+//         color: color.withValues(alpha: 0.1),
 //         shape: BoxShape.circle,
-//         border: Border.all(color: color.withOpacity(0.3), width: 1),
+//         border: Border.all(color: color.withValues(alpha: 0.3), width: 1),
 //       ),
 //       child: Icon(icon, size: 18, color: color),
 //     );
@@ -317,7 +317,7 @@
 //               borderRadius: BorderRadius.circular(20),
 //               boxShadow: [
 //                 BoxShadow(
-//                   color: Colors.black.withOpacity(0.05),
+//                   color: Colors.black.withValues(alpha: 0.05),
 //                   blurRadius: 5,
 //                   offset: Offset(0, 2),
 //                 ),
@@ -353,7 +353,7 @@
 //             width: 8,
 //             height: 8,
 //             decoration: BoxDecoration(
-//               color: controller.currentProviderColor.withOpacity(0.7),
+//               color: controller.currentProviderColor.withValues(alpha: 0.7),
 //               shape: BoxShape.circle,
 //             ),
 //           ),
@@ -842,7 +842,7 @@ class ChatWithAIScreen extends StatelessWidget {
                   ),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.05),
+                      color: Colors.black.withValues(alpha: 0.05),
                       blurRadius: 5,
                       offset: Offset(0, 2),
                     ),
@@ -864,7 +864,7 @@ class ChatWithAIScreen extends StatelessWidget {
                       DateFormat('HH:mm').format(message.timestamp),
                       style: TextStyle(
                         color: message.isUser
-                            ? Colors.white.withOpacity(0.8)
+                            ? Colors.white.withValues(alpha: 0.8)
                             : Colors.grey[500],
                         fontSize: 11,
                       ),
@@ -891,9 +891,9 @@ class ChatWithAIScreen extends StatelessWidget {
       width: 32,
       height: 32,
       decoration: BoxDecoration(
-        color: color.withOpacity(0.1),
+        color: color.withValues(alpha: 0.1),
         shape: BoxShape.circle,
-        border: Border.all(color: color.withOpacity(0.3), width: 1),
+        border: Border.all(color: color.withValues(alpha: 0.3), width: 1),
       ),
       child: Icon(icon, size: 18, color: color),
     );
@@ -925,7 +925,7 @@ class ChatWithAIScreen extends StatelessWidget {
               borderRadius: BorderRadius.circular(20),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(0.05),
+                  color: Colors.black.withValues(alpha: 0.05),
                   blurRadius: 5,
                   offset: Offset(0, 2),
                 ),
@@ -961,7 +961,7 @@ class ChatWithAIScreen extends StatelessWidget {
             width: 8,
             height: 8,
             decoration: BoxDecoration(
-              color: controller.currentProviderColor.withOpacity(0.7),
+              color: controller.currentProviderColor.withValues(alpha: 0.7),
               shape: BoxShape.circle,
             ),
           ),

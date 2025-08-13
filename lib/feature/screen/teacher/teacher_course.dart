@@ -300,7 +300,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.08),
+              color: Colors.black.withValues(alpha: 0.08),
               blurRadius: 12,
               offset: const Offset(0, 4),
             ),
@@ -503,7 +503,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
                 backgroundColor: const Color(0xFF6366F1),
                 foregroundColor: Colors.white,
                 elevation: 3,
-                shadowColor: const Color(0xFF6366F1).withOpacity(0.4),
+                shadowColor: const Color(0xFF6366F1).withValues(alpha: 0.4),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
@@ -572,7 +572,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
               borderRadius: BorderRadius.circular(12),
               boxShadow: [
                 BoxShadow(
-                  color: const Color(0xFF6366F1).withOpacity(0.4),
+                  color: const Color(0xFF6366F1).withValues(alpha: 0.4),
                   blurRadius: 8,
                   offset: const Offset(0, 2),
                 ),
@@ -650,7 +650,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -662,7 +662,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
           Container(
             padding: const EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
+              color: color.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: color, size: 20),
@@ -756,7 +756,7 @@ class _TeacherCourseScreenState extends State<TeacherCourseScreen> {
                 backgroundColor: const Color(0xFF6366F1),
                 foregroundColor: Colors.white,
                 elevation: 3,
-                shadowColor: const Color(0xFF6366F1).withOpacity(0.4),
+                shadowColor: const Color(0xFF6366F1).withValues(alpha: 0.4),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),

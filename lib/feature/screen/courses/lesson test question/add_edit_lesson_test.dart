@@ -136,7 +136,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -148,7 +148,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
             width: 50,
             height: 50,
             decoration: BoxDecoration(
-              color: const Color(0xFF6366F1).withOpacity(0.1),
+              color: const Color(0xFF6366F1).withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(12),
             ),
             child: Icon(
@@ -196,7 +196,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -365,7 +365,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
   //           ),
   //           Container(
   //             decoration: BoxDecoration(
-  //               color: const Color(0xFF667EEA).withOpacity(0.1),
+  //               color: const Color(0xFF667EEA).withValues(alpha: 0.1),
   //               borderRadius: BorderRadius.circular(8),
   //             ),
   //             child: IconButton(
@@ -523,7 +523,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
                       child: Container(
                         padding: const EdgeInsets.all(4),
                         decoration: BoxDecoration(
-                          color: Colors.red.withOpacity(0.1),
+                          color: Colors.red.withValues(alpha: 0.1),
                           borderRadius: BorderRadius.circular(6),
                         ),
                         child: const Icon(
@@ -561,7 +561,7 @@ class _AddEditTestQuestionScreenState extends State<AddEditTestQuestionScreen> {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: const Color(0xFFEF4444).withOpacity(0.1),
+        color: const Color(0xFFEF4444).withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(8),
       ),
       child: Row(

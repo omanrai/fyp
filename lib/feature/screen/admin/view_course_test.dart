@@ -93,7 +93,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: color.withOpacity(0.3),
+            color: color.withValues(alpha: 0.3),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -121,7 +121,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white.withValues(alpha: 0.2),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(icon, color: Colors.white, size: 20),
@@ -141,7 +141,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
             subTitle,
             style: TextStyle(
               fontSize: 12,
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -201,7 +201,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.red.withOpacity(0.1),
+                    color: Colors.red.withValues(alpha: 0.1),
                     blurRadius: 20,
                     offset: const Offset(0, 8),
                   ),
@@ -214,7 +214,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                     width: 80,
                     height: 80,
                     decoration: BoxDecoration(
-                      color: Colors.red.withOpacity(0.1),
+                      color: Colors.red.withValues(alpha: 0.1),
                       borderRadius: BorderRadius.circular(40),
                     ),
                     child: const Icon(
@@ -273,7 +273,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.05),
+                    color: Colors.black.withValues(alpha: 0.05),
                     blurRadius: 20,
                     offset: const Offset(0, 8),
                   ),
@@ -288,8 +288,8 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
                         colors: [
-                          const Color(0xFF667EEA).withOpacity(0.1),
-                          const Color(0xFF764BA2).withOpacity(0.1),
+                          const Color(0xFF667EEA).withValues(alpha: 0.1),
+                          const Color(0xFF764BA2).withValues(alpha: 0.1),
                         ],
                       ),
                       borderRadius: BorderRadius.circular(50),
@@ -352,7 +352,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -483,12 +483,12 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
                         color: isCorrect
-                            ? const Color(0xFF10B981).withOpacity(0.08)
+                            ? const Color(0xFF10B981).withValues(alpha: 0.08)
                             : const Color(0xFFF8FAFC),
                         borderRadius: BorderRadius.circular(12),
                         border: Border.all(
                           color: isCorrect
-                              ? const Color(0xFF10B981).withOpacity(0.3)
+                              ? const Color(0xFF10B981).withValues(alpha: 0.3)
                               : const Color(0xFFE2E8F0),
                           width: isCorrect ? 1.5 : 1,
                         ),
@@ -534,7 +534,7 @@ class AdminCourseTestQuestionScreen extends StatelessWidget {
                             Container(
                               padding: const EdgeInsets.all(4),
                               decoration: BoxDecoration(
-                                color: const Color(0xFF10B981).withOpacity(0.2),
+                                color: const Color(0xFF10B981).withValues(alpha: 0.2),
                                 borderRadius: BorderRadius.circular(6),
                               ),
                               child: const Icon(

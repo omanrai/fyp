@@ -17,7 +17,7 @@ class ProfileScreen extends StatelessWidget {
       onStart: () => controller.setImageUploading(true),
       onEnd: () => controller.setImageUploading(false),
       onError: (error) {
-        print('Image picker error: $error');
+        // print('Image picker error: $error');
       },
     );
 
@@ -72,7 +72,7 @@ class ProfileScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(24),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF6366F1).withOpacity(0.3),
+                        color: const Color(0xFF6366F1).withValues(alpha: 0.3),
                         blurRadius: 20,
                         offset: const Offset(0, 10),
                       ),
@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
                         width: 80,
                         height: 80,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                          color: Colors.white.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: const Icon(
@@ -122,7 +122,7 @@ class ProfileScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Colors.black.withValues(alpha: 0.05),
                         blurRadius: 20,
                         offset: const Offset(0, 5),
                       ),
@@ -151,7 +151,7 @@ class ProfileScreen extends StatelessWidget {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF6366F1,
-                                        ).withOpacity(0.2),
+                                        ).withValues(alpha: 0.2),
                                         blurRadius: 10,
                                         offset: const Offset(0, 5),
                                       ),
@@ -166,7 +166,7 @@ class ProfileScreen extends StatelessWidget {
                                         : Container(
                                             color: const Color(
                                               0xFF6366F1,
-                                            ).withOpacity(0.1),
+                                            ).withValues(alpha: 0.1),
                                             child: const Icon(
                                               Icons.person,
                                               size: 50,
@@ -305,7 +305,7 @@ class ProfileScreen extends StatelessWidget {
                                 BoxShadow(
                                   color: const Color(
                                     0xFF6366F1,
-                                  ).withOpacity(0.3),
+                                  ).withValues(alpha: 0.3),
                                   blurRadius: 12,
                                   offset: const Offset(0, 6),
                                 ),
@@ -391,7 +391,7 @@ class ProfileScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),

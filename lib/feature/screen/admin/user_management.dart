@@ -56,7 +56,7 @@ class UserManagementScreen extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [Colors.transparent, Colors.white.withOpacity(0.1)],
+                colors: [Colors.transparent, Colors.white.withValues(alpha: 0.1)],
               ),
             ),
           ),
@@ -66,9 +66,9 @@ class UserManagementScreen extends StatelessWidget {
         Container(
           margin: const EdgeInsets.only(right: 16),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.2),
+            color: Colors.white.withValues(alpha: 0.2),
             borderRadius: BorderRadius.circular(12),
-            border: Border.all(color: Colors.white.withOpacity(0.3)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.3)),
           ),
           child: IconButton(
             icon: const Icon(Icons.refresh_rounded, color: Colors.white),
@@ -153,7 +153,7 @@ class UserManagementScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -203,7 +203,7 @@ class UserManagementScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -411,7 +411,7 @@ class UserManagementScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           ),
@@ -514,7 +514,7 @@ class UserManagementScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: _getRoleColor(user.role).withOpacity(0.3),
+            color: _getRoleColor(user.role).withValues(alpha: 0.3),
             blurRadius: 8,
             offset: const Offset(0, 4),
           ),
@@ -531,7 +531,7 @@ class UserManagementScreen extends StatelessWidget {
               end: Alignment.bottomRight,
               colors: [
                 _getRoleColor(user.role),
-                _getRoleColor(user.role).withOpacity(0.8),
+                _getRoleColor(user.role).withValues(alpha: 0.8),
               ],
             ),
           ),
@@ -607,9 +607,9 @@ class UserManagementScreen extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
       decoration: BoxDecoration(
-        color: roleColor.withOpacity(0.1),
+        color: roleColor.withValues(alpha: 0.1),
         borderRadius: BorderRadius.circular(12),
-        border: Border.all(color: roleColor.withOpacity(0.3)),
+        border: Border.all(color: roleColor.withValues(alpha: 0.3)),
       ),
       child: Text(
         role.toUpperCase(),
@@ -676,7 +676,7 @@ class UserManagementScreen extends StatelessWidget {
                         (user.isSuspended
                                 ? const Color(0xFF10B981)
                                 : const Color(0xFFEF4444))
-                            .withOpacity(0.3),
+                            .withValues(alpha: 0.3),
                     blurRadius: 8,
                     offset: const Offset(0, 4),
                   ),
@@ -726,7 +726,7 @@ class UserManagementScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF6366F1).withOpacity(0.4),
+            color: const Color(0xFF6366F1).withValues(alpha: 0.4),
             blurRadius: 12,
             offset: const Offset(0, 6),
           ),

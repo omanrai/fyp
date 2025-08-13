@@ -272,7 +272,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.red.withOpacity(0.1),
+              color: Colors.red.withValues(alpha: 0.1),
               blurRadius: 20,
               offset: const Offset(0, 8),
             ),
@@ -334,7 +334,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withValues(alpha: 0.05),
               blurRadius: 20,
               offset: const Offset(0, 8),
             ),
@@ -347,7 +347,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
               width: 100,
               height: 100,
               decoration: BoxDecoration(
-                color: const Color(0xFF6366F1).withOpacity(0.1),
+                color: const Color(0xFF6366F1).withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(50),
               ),
               child: const Icon(
@@ -474,7 +474,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -547,7 +547,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
                 padding: const EdgeInsets.all(20),
                 decoration: BoxDecoration(
                   color: isSelected
-                      ? const Color(0xFF6366F1).withOpacity(0.1)
+                      ? const Color(0xFF6366F1).withValues(alpha: 0.1)
                       : Colors.white,
                   borderRadius: BorderRadius.circular(16),
                   border: Border.all(
@@ -559,7 +559,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
                   boxShadow: [
                     if (isSelected)
                       BoxShadow(
-                        color: const Color(0xFF6366F1).withOpacity(0.2),
+                        color: const Color(0xFF6366F1).withValues(alpha: 0.2),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -687,7 +687,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
                               : progressPercentage >= 50
                               ? const Color(0xFFF59E0B)
                               : const Color(0xFFEF4444))
-                          .withOpacity(0.3),
+                          .withValues(alpha: 0.3),
                   blurRadius: 20,
                   offset: const Offset(0, 8),
                 ),
@@ -731,7 +731,7 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
                   '$correctAnswers out of ${allQuestions.length} questions correct',
                   style: TextStyle(
                     fontSize: 16,
-                    color: Colors.white.withOpacity(0.9),
+                    color: Colors.white.withValues(alpha: 0.9),
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -822,10 +822,10 @@ class _CourseTestQuizScreenState extends State<CourseTestQuizScreen>
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: color.withOpacity(0.2)),
+        border: Border.all(color: color.withValues(alpha: 0.2)),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 8,
             offset: const Offset(0, 2),
           ),

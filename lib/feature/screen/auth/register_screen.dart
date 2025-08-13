@@ -18,7 +18,7 @@ class RegistrationScreen extends StatelessWidget {
       onStart: () => controller.setImageUploading(true),
       onEnd: () => controller.setImageUploading(false),
       onError: (error) {
-        print('Image picker error: $error');
+        // print('Image picker error: $error');
       },
     );
 
@@ -56,7 +56,7 @@ class RegistrationScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(24),
                     boxShadow: [
                       BoxShadow(
-                        color: const Color(0xFF6366F1).withOpacity(0.3),
+                        color: const Color(0xFF6366F1).withValues(alpha: 0.3),
                         blurRadius: 20,
                         offset: const Offset(0, 10),
                       ),
@@ -68,7 +68,7 @@ class RegistrationScreen extends StatelessWidget {
                         width: 80,
                         height: 80,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.2),
+                          color: Colors.white.withValues(alpha: 0.2),
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: const Icon(
@@ -106,7 +106,7 @@ class RegistrationScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.05),
+                        color: Colors.black.withValues(alpha: 0.05),
                         blurRadius: 20,
                         offset: const Offset(0, 5),
                       ),
@@ -135,7 +135,7 @@ class RegistrationScreen extends StatelessWidget {
                                       BoxShadow(
                                         color: const Color(
                                           0xFF6366F1,
-                                        ).withOpacity(0.2),
+                                        ).withValues(alpha: 0.2),
                                         blurRadius: 10,
                                         offset: const Offset(0, 5),
                                       ),
@@ -151,7 +151,7 @@ class RegistrationScreen extends StatelessWidget {
                                         : Container(
                                             color: const Color(
                                               0xFF6366F1,
-                                            ).withOpacity(0.1),
+                                            ).withValues(alpha: 0.1),
                                             child: const Icon(
                                               Icons.person,
                                               size: 40,
@@ -319,7 +319,7 @@ class RegistrationScreen extends StatelessWidget {
                                 BoxShadow(
                                   color: const Color(
                                     0xFF6366F1,
-                                  ).withOpacity(0.3),
+                                  ).withValues(alpha: 0.3),
                                   blurRadius: 12,
                                   offset: const Offset(0, 6),
                                 ),
@@ -430,7 +430,7 @@ class RegistrationScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 2),
           ),
@@ -494,7 +494,7 @@ class RegistrationScreen extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           color: isSelected
-              ? const Color(0xFF6366F1).withOpacity(0.1)
+              ? const Color(0xFF6366F1).withValues(alpha: 0.1)
               : const Color(0xFFF9FAFB),
           border: Border.all(
             color: isSelected
@@ -506,7 +506,7 @@ class RegistrationScreen extends StatelessWidget {
           boxShadow: isSelected
               ? [
                   BoxShadow(
-                    color: const Color(0xFF6366F1).withOpacity(0.2),
+                    color: const Color(0xFF6366F1).withValues(alpha: 0.2),
                     blurRadius: 8,
                     offset: const Offset(0, 2),
                   ),
@@ -521,7 +521,7 @@ class RegistrationScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: isSelected
                     ? const Color(0xFF6366F1)
-                    : const Color(0xFF6B7280).withOpacity(0.1),
+                    : const Color(0xFF6B7280).withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(12),
               ),
               child: Icon(

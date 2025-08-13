@@ -132,7 +132,7 @@ class SecuritySettingsScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
-                      color: Colors.black.withOpacity(0.06),
+                      color: Colors.black.withValues(alpha: 0.06),
                       blurRadius: 12,
                       offset: const Offset(0, 4),
                     ),
@@ -192,7 +192,7 @@ class SecuritySettingsScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -205,7 +205,7 @@ class SecuritySettingsScreen extends StatelessWidget {
           onTap: isEnabled ? onTap : () => _showDisabledMessage(),
           child: ListTile(
             leading: CircleAvatar(
-              backgroundColor: color.withOpacity(0.2),
+              backgroundColor: color.withValues(alpha: 0.2),
               child: Icon(icon, color: isEnabled ? color : Colors.grey),
             ),
             title: Text(
@@ -243,7 +243,7 @@ class SecuritySettingsScreen extends StatelessWidget {
           Icon(
             Icons.check_circle_outline,
             size: 20,
-            color: color.withOpacity(0.7),
+            color: color.withValues(alpha: 0.7),
           ),
           const SizedBox(width: 12),
           Expanded(

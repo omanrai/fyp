@@ -90,7 +90,7 @@ class QuizReportScreen extends StatelessWidget {
         boxShadow: [
           BoxShadow(
             color: (isPassed ? const Color(0xFF10B981) : const Color(0xFFEF4444))
-                .withOpacity(0.3),
+                .withValues(alpha: 0.3),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),
@@ -102,7 +102,7 @@ class QuizReportScreen extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.2),
+              color: Colors.white.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
@@ -159,7 +159,7 @@ class QuizReportScreen extends StatelessWidget {
             '$correctAnswers out of $totalQuestions questions correct',
             style: TextStyle(
               fontSize: 16,
-              color: Colors.white.withOpacity(0.9),
+              color: Colors.white.withValues(alpha: 0.9),
               fontWeight: FontWeight.w500,
             ),
           ),
@@ -179,7 +179,7 @@ class QuizReportScreen extends StatelessWidget {
               Container(
                 width: 1,
                 height: 40,
-                color: Colors.white.withOpacity(0.3),
+                color: Colors.white.withValues(alpha: 0.3),
               ),
               Expanded(
                 child: _buildStatItem(
@@ -191,7 +191,7 @@ class QuizReportScreen extends StatelessWidget {
               Container(
                 width: 1,
                 height: 40,
-                color: Colors.white.withOpacity(0.3),
+                color: Colors.white.withValues(alpha: 0.3),
               ),
               Expanded(
                 child: _buildStatItem(
@@ -224,7 +224,7 @@ class QuizReportScreen extends StatelessWidget {
           label,
           style: TextStyle(
             fontSize: 12,
-            color: Colors.white.withOpacity(0.8),
+            color: Colors.white.withValues(alpha: 0.8),
             fontWeight: FontWeight.w500,
           ),
         ),
@@ -251,7 +251,7 @@ class QuizReportScreen extends StatelessWidget {
             'Review your answers and see the correct solutions',
             style: TextStyle(
               fontSize: 14,
-              color: const Color(0xFF64748B).withOpacity(0.8),
+              color: const Color(0xFF64748B).withValues(alpha: 0.8),
             ),
           ),
           const SizedBox(height: 20),
@@ -281,13 +281,13 @@ class QuizReportScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
         border: Border.all(
           color: isCorrect 
-              ? const Color(0xFF10B981).withOpacity(0.3)
-              : const Color(0xFFEF4444).withOpacity(0.3),
+              ? const Color(0xFF10B981).withValues(alpha: 0.3)
+              : const Color(0xFFEF4444).withValues(alpha: 0.3),
           width: 2,
         ),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.06),
+            color: Colors.black.withValues(alpha: 0.06),
             blurRadius: 12,
             offset: const Offset(0, 4),
           ),
@@ -301,8 +301,8 @@ class QuizReportScreen extends StatelessWidget {
             padding: const EdgeInsets.all(20),
             decoration: BoxDecoration(
               color: isCorrect 
-                  ? const Color(0xFF10B981).withOpacity(0.08)
-                  : const Color(0xFFEF4444).withOpacity(0.08),
+                  ? const Color(0xFF10B981).withValues(alpha: 0.08)
+                  : const Color(0xFFEF4444).withValues(alpha: 0.08),
               borderRadius: const BorderRadius.only(
                 topLeft: Radius.circular(18),
                 topRight: Radius.circular(18),
@@ -398,7 +398,7 @@ class QuizReportScreen extends StatelessWidget {
                   Widget? trailingIcon;
                   
                   if (isCorrectOption) {
-                    backgroundColor = const Color(0xFF10B981).withOpacity(0.1);
+                    backgroundColor = const Color(0xFF10B981).withValues(alpha: 0.1);
                     borderColor = const Color(0xFF10B981);
                     textColor = const Color(0xFF047857);
                     trailingIcon = const Icon(
@@ -407,7 +407,7 @@ class QuizReportScreen extends StatelessWidget {
                       size: 20,
                     );
                   } else if (isUserAnswer && !isCorrect) {
-                    backgroundColor = const Color(0xFFEF4444).withOpacity(0.1);
+                    backgroundColor = const Color(0xFFEF4444).withValues(alpha: 0.1);
                     borderColor = const Color(0xFFEF4444);
                     textColor = const Color(0xFFDC2626);
                     trailingIcon = const Icon(
@@ -482,7 +482,7 @@ class QuizReportScreen extends StatelessWidget {
                       color: const Color(0xFFFEF2F2),
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
-                        color: const Color(0xFFEF4444).withOpacity(0.3),
+                        color: const Color(0xFFEF4444).withValues(alpha: 0.3),
                       ),
                     ),
                     child: Row(
@@ -549,7 +549,7 @@ class QuizReportScreen extends StatelessWidget {
         borderRadius: BorderRadius.circular(28),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF6366F1).withOpacity(0.4),
+            color: const Color(0xFF6366F1).withValues(alpha: 0.4),
             blurRadius: 20,
             offset: const Offset(0, 8),
           ),

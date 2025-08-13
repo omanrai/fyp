@@ -386,7 +386,7 @@
 //                       color: Colors.white,
 //                       boxShadow: [
 //                         BoxShadow(
-//                           color: Colors.grey.withOpacity(0.1),
+//                           color: Colors.grey.withValues(alpha: 0.1),
 //                           blurRadius: 4,
 //                           offset: const Offset(0, -2),
 //                         ),
@@ -407,7 +407,7 @@
 //                             elevation: 3,
 //                             shadowColor: const Color(
 //                               0xFF6366F1,
-//                             ).withOpacity(0.4),
+//                             ).withValues(alpha: 0.4),
 //                             shape: RoundedRectangleBorder(
 //                               borderRadius: BorderRadius.circular(12),
 //                             ),

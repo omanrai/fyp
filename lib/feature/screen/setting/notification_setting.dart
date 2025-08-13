@@ -40,12 +40,12 @@ class NotificationPreferencesController extends GetxController {
   void loadPreferences() {
     // Load preferences from SharedPreferences or API
     // This is where you would load saved preferences
-    print('Loading notification preferences...');
+    // print('Loading notification preferences...');
   }
 
   void savePreferences() {
     // Save preferences to SharedPreferences or API
-    print('Saving notification preferences...');
+    // print('Saving notification preferences...');
     Get.snackbar(
       'Success',
       'Notification preferences saved successfully',
@@ -312,8 +312,8 @@ class NotificationPreferencesScreen extends StatelessWidget {
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
               color: controller.isNotificationsEnabled.value
-                  ? Colors.green.withOpacity(0.2)
-                  : Colors.grey.withOpacity(0.2),
+                  ? Colors.green.withValues(alpha: 0.2)
+                  : Colors.grey.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(
@@ -367,7 +367,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: color.withOpacity(0.2),
+              color: color.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: color),
@@ -413,7 +413,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.blue.withOpacity(0.2),
+              color: Colors.blue.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: Colors.blue),
@@ -459,7 +459,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.orange.withOpacity(0.2),
+              color: Colors.orange.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: Colors.orange),
@@ -500,7 +500,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.indigo.withOpacity(0.2),
+              color: Colors.indigo.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(Icons.nightlight_round, color: Colors.indigo),
@@ -585,7 +585,7 @@ class NotificationPreferencesScreen extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(8),
             decoration: BoxDecoration(
-              color: Colors.teal.withOpacity(0.2),
+              color: Colors.teal.withValues(alpha: 0.2),
               borderRadius: BorderRadius.circular(8),
             ),
             child: Icon(icon, color: Colors.teal),

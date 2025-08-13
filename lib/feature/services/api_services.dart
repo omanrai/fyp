@@ -474,7 +474,7 @@ class ApiService {
           );
       }
     } catch (e) {
-      print('[ApiService] Failed to parse response: $e');
+      // print('[ApiService] Failed to parse response: $e');
       return ApiResponse<Map<String, dynamic>>(
         success: false,
         message: 'Failed to parse server response',

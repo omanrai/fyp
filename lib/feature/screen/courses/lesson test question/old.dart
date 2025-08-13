@@ -37,7 +37,7 @@
 //         borderRadius: BorderRadius.circular(28),
 //         boxShadow: [
 //           BoxShadow(
-//             color: const Color(0xFF667EEA).withOpacity(0.4),
+//             color: const Color(0xFF667EEA).withValues(alpha: 0.4),
 //             blurRadius: 20,
 //             offset: const Offset(0, 8),
 //           ),
@@ -114,7 +114,7 @@
 //                     Container(
 //                       padding: const EdgeInsets.all(8),
 //                       decoration: BoxDecoration(
-//                         color: Colors.white.withOpacity(0.2),
+//                         color: Colors.white.withValues(alpha: 0.2),
 //                         borderRadius: BorderRadius.circular(8),
 //                       ),
 //                       child: Icon(
@@ -218,7 +218,7 @@
 //                           ),
 //                           Container(
 //                             decoration: BoxDecoration(
-//                               color: const Color(0xFF667EEA).withOpacity(0.1),
+//                               color: const Color(0xFF667EEA).withValues(alpha: 0.1),
 //                               borderRadius: BorderRadius.circular(8),
 //                             ),
 //                             child: IconButton(
@@ -324,7 +324,7 @@
 //                                               child: Container(
 //                                                 padding: const EdgeInsets.all(4),
 //                                                 decoration: BoxDecoration(
-//                                                   color: Colors.red.withOpacity(0.1),
+//                                                   color: Colors.red.withValues(alpha: 0.1),
 //                                                   borderRadius: BorderRadius.circular(6),
 //                                                 ),
 //                                                 child: const Icon(

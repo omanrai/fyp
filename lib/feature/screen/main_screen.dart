@@ -347,7 +347,7 @@ class _MainScreenState extends State<MainScreen> {
       elevation: 4,
       child: ListTile(
         leading: CircleAvatar(
-          backgroundColor: color.withOpacity(0.2),
+          backgroundColor: color.withValues(alpha: 0.2),
           child: Icon(icon, color: color),
         ),
         title: Text(
@@ -429,8 +429,8 @@ class _MainScreenState extends State<MainScreen> {
       child: ListTile(
         leading: CircleAvatar(
           backgroundColor: isLogout
-              ? Colors.red.withOpacity(0.2)
-              : roleColor.withOpacity(0.2),
+              ? Colors.red.withValues(alpha: 0.2)
+              : roleColor.withValues(alpha: 0.2),
           child: Icon(icon, color: isLogout ? Colors.red : roleColor),
         ),
         title: Text(

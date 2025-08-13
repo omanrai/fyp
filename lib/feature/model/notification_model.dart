@@ -60,8 +60,8 @@ class NotificationRecipient {
         version: json['__v'] ?? 0,
       );
     } catch (e) {
-      print('Error parsing NotificationRecipient: $e');
-      print('JSON data: $json');
+      // print('Error parsing NotificationRecipient: $e');
+      // print('JSON data: $json');
       rethrow;
     }
   }
@@ -104,8 +104,8 @@ class UserNotificationStatus {
         id: json['_id']?.toString() ?? '',
       );
     } catch (e) {
-      print('Error parsing UserNotificationStatus: $e');
-      print('JSON data: $json');
+      // print('Error parsing UserNotificationStatus: $e');
+      // print('JSON data: $json');
       rethrow;
     }
   }
@@ -206,8 +206,8 @@ class NotificationModel {
             [],
       );
     } catch (e) {
-      print('Error parsing NotificationModel: $e');
-      print('JSON data: $json');
+      // print('Error parsing NotificationModel: $e');
+      // print('JSON data: $json');
       rethrow;
     }
   }
@@ -321,8 +321,8 @@ class NotificationData {
     try {
       return NotificationData(courseId: json['courseId']?.toString() ?? '');
     } catch (e) {
-      print('Error parsing NotificationData: $e');
-      print('JSON data: $json');
+      // print('Error parsing NotificationData: $e');
+      // print('JSON data: $json');
       rethrow;
     }
   }
