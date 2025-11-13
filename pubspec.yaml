@@ -49,6 +49,10 @@ dependencies:
   badges: ^3.1.2
   biometric_signature: ^6.2.0
   local_auth: ^2.3.0
+  # Bloc State Management
+  flutter_bloc: ^8.1.6
+  equatable: ^2.0.5
+  bloc: ^8.1.4
 
 dev_dependencies:
   flutter_test:
