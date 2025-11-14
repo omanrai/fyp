@@ -56,7 +56,7 @@ class ChatWithAIScreen extends StatelessWidget {
             ),
             SizedBox(width: 8),
             Text(
-            'AI Assistant, hello!',
+            'AI Assistant, hello Guys!',
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
             ),
           ],
